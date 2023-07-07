@@ -18,7 +18,7 @@ export class MascotasResolver {
   async findAll():Promise<Mascota[]> {
     return this.mascotasService.findAll();
   }
-
+//commit prueba
   @Query(() => Mascota, { name: 'mascotas' })
   findOne(@Args('id', { type: () => ID}, ParseUUIDPipe ) id: string): Promise<Mascota> {
     return this.mascotasService.findOne(id);
