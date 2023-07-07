@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mascota {
+  id: ID!
+  nombre: String!
+  dueno: String!
+  estado: Boolean!
+}
+
+type Query {
+  mascotas(id: ID!): Mascota!
+}
+
+type Mutation {
+  createMascota(createMascotaInput: CreateMascotaInput!): Mascota!
+  updateMascota(updateMascotaInput: UpdateMascotaInput!): Mascota!
+  removeMascota(id: ID!): Mascota!
+}
+
+input CreateMascotaInput {
+  nombre: String!
+  dueno: String!
+  estado: Boolean!
+}
+
+input UpdateMascotaInput {
+  nombre: String
+  dueno: String
+  estado: Boolean
+  id: ID!
+}
