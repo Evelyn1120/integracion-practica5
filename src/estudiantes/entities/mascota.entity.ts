@@ -8,7 +8,7 @@ export class Mascota {
     @PrimaryGeneratedColumn('uuid')
     @Field(()=> ID)
     id:string;
-    //
+    
 
     @Column()
     @Field(()=>String)
